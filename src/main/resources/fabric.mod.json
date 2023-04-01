@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "hotloader",
+  "version": "${version}",
+  "name": "Hotloader",
+  "description": "probably a bad idea",
+  "authors": [
+    "justsoupie"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/hotloader/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.soupie.hotloader.client.HotloaderClient"
+    ],
+    "main": [
+      "dev.soupie.hotloader.Hotloader"
+    ]
+  },
+  "mixins": [
+    "hotloader.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.18",
+    "fabric": "*",
+    "minecraft": "1.19.4"
+  }
+}
